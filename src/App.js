@@ -2,8 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import AppContext from './ContextAPIs/AppContext';
 import { useState } from 'react';
-import Navbar from './Components/Navbar/Navbar';
-import { Button } from 'antd';
+import Navbar from './Components/Navbar';
 
 
 
@@ -23,7 +22,6 @@ function App() {
         <div>
           {appState.icon} {appState.title }
           <Navbar />
-          <Button type="primary" >dhfgj</Button>
         </div>
       </div>
     </AppContext.Provider>
