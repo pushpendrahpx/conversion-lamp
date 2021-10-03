@@ -18,9 +18,6 @@ jobs:
       - name: Build dependencies
         run: |
           CI=false npm run build
-          ls 
-          ls build
-          ls 
       - name: Deploy to conversion-lamp.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
