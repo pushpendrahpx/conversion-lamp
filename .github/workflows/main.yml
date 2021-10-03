@@ -8,11 +8,16 @@ jobs:
   my-job:
     name: Deploy Job
     runs-on: ubuntu-latest
-    steps:
+    steps:      
+      - name: change directory 
+        run:  |
+          npm run build
+          cd build
       - name: Deploy to conversion-lamp.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: 'conversion-lamp.surge.sh'
-          project: '.'
+          project: 'build'
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
+
