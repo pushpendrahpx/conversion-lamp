@@ -12,7 +12,8 @@ jobs:
       - name: Deploy to conversion-lamp.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
-          domain: 'fconversion-lamp.surge.sh'
+          domain: 'conversion-lamp.surge.sh'
+          email: ${{ secrets.surge_email }}
           project: '.'
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
