@@ -1,0 +1,18 @@
+name: Conversion-Lamp-Deploy
+
+on:
+  push:
+    branches : [ main ]
+
+jobs:
+  my-job:
+    name: Deploy Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to conversion-lamp.surge.sh
+        uses: dswistowski/surge-sh-action@v1
+        with:
+          domain: 'fconversion-lamp.surge.sh'
+          project: '.'
+          login: ${{ secrets.surge_login }}
+          token: ${{ secrets.surge_token }}
