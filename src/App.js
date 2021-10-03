@@ -23,7 +23,7 @@ function App() {
         <div>
           {appState.icon} {appState.title }
           <Navbar />
-          <Button type="primary" >dhfgj</Button>
+          <Button type="primary" >Click me!</Button>
         </div>
       </div>
     </AppContext.Provider>
