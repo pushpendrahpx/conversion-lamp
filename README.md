@@ -2,7 +2,7 @@
 ### A 📁 file conversion app, you'll ever need.
 
 <b>Conversion-Lamp</b> is live at - https://conversion-lamp.surge.sh/
-
+<b> Slack Communication Channel</b> Invite Link - [Click Here](https://join.slack.com/t/conversion-lamp/shared_invite/zt-wl17ezcm-TWDqC2KzKlGvdV6QPY0hrg)
 ## Installation Steps
 
 ### Development Mode
