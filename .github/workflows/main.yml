@@ -3,21 +3,28 @@ name: Conversion-Lamp-Deploy
 on:
   push:
     branches : [ main ]
-
+    
 jobs:
-  my-job:
-    name: Deploy Job
+  build:
+    name: Build
     runs-on: ubuntu-latest
-    steps:      
-      - name: change directory
-        run:  |
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@main
+      - name: Install dependencies
+        run: |
+          npm cache clean --force
+          npm ci
+      - name: Build dependencies
+        run: |
           npm run build
+          ls 
+          ls build
           ls 
       - name: Deploy to conversion-lamp.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: 'conversion-lamp.surge.sh'
-          project: '.'
+          project: 'build'
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
-
