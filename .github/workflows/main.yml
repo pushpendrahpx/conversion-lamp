@@ -12,8 +12,8 @@ jobs:
       - name: change directory 
         uses: actions/checkout@v2
         run:  |
-          npm build
-          cd build
+          npm run build
+          ls 
       - name: Deploy to conversion-lamp.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
