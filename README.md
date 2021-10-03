@@ -1,10 +1,7 @@
 # ✨Conversion-Lamp : Readme File
+### A 📁 file conversion app, you'll ever need.
 
----
-
-> A 📁 file conversion app, you'll ever need.
-
-Conversion-Lamp is live at - https://conversion-lamp.surge.sh/
+<b>Conversion-Lamp</b> is live at - https://conversion-lamp.surge.sh/
 
 ## Installation Steps
 
