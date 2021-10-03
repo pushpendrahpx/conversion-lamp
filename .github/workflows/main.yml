@@ -11,7 +11,7 @@ jobs:
     steps:      
       - name: change directory 
         run:  |
-          npm run build
+          npm build
           cd build
       - name: Deploy to conversion-lamp.surge.sh
         uses: dswistowski/surge-sh-action@v1
