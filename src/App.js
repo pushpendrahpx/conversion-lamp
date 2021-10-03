@@ -28,7 +28,7 @@ function App() {
                 <Navbar />
               </div>
             </div>
-      </AppContext.Provider>
+        </AppContext.Provider>
       </Switch>
     </BrowserRouter>
   );
