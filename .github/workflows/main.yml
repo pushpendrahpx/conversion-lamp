@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:      
       - name: change directory 
+        uses: actions/checkout@v2
         run:  |
           npm build
           cd build
