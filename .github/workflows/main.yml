@@ -17,7 +17,7 @@ jobs:
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: 'conversion-lamp.surge.sh'
-          project: 'build'
+          project: '.'
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
 
