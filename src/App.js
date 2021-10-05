@@ -23,7 +23,14 @@ function App() {
         <div>
           {appState.icon} {appState.title }
           <Navbar />
-          <Button type="primary" >dhfgj</Button>
+          <div style={{
+            width: "100vw",
+            height: "100vh",
+            display: "grid",
+            placeContent: "center"
+          }}>
+          <Button type="primary" >Button</Button>
+          </div>
         </div>
       </div>
     </AppContext.Provider>
