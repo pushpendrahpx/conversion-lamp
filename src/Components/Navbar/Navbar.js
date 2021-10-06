@@ -1,7 +1,7 @@
 import React from 'react'
-import { Menu } from 'antd';
+import { Menu, Layout,Breadcrumb } from 'antd';
 import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
-
+const { Header, Content, Footer } = Layout;
 const { SubMenu } = Menu;
 
 class Navbar extends React.Component {
@@ -17,30 +17,25 @@ class Navbar extends React.Component {
   render() {
     const { current } = this.state;
     return (
-      <Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal">
-          
-        <Menu.Item key="mail" icon={<MailOutlined />}>
-          Navigation One
-        </Menu.Item>
-        <Menu.Item key="app" disabled icon={<AppstoreOutlined />}>
-          Navigation Two
-        </Menu.Item>
-        <SubMenu key="SubMenu" icon={<SettingOutlined />} title="Navigation Three - Submenu">
-          <Menu.ItemGroup title="Item 1">
-            <Menu.Item key="setting:1">Option 1</Menu.Item>
-            <Menu.Item key="setting:2">Option 2</Menu.Item>
-          </Menu.ItemGroup>
-          <Menu.ItemGroup title="Item 2">
-            <Menu.Item key="setting:3">Option 3</Menu.Item>
-            <Menu.Item key="setting:4">Option 4</Menu.Item>
-          </Menu.ItemGroup>
-        </SubMenu>
-        <Menu.Item key="alipay">
-          <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
-            Navigation Four - Link
-          </a>
-        </Menu.Item>
+      <Layout>
+    <Header style={{ position: 'fixed', zIndex: 1, width: '100%', display:"inline-flex" }}>
+      <a href="/">
+        <div className="logo" style={{color:"white", fontSize:"24px",cursor:"pointer",userSelect:"none"}}>
+          ConversionLamp
+        </div>
+      </a>
+
+      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} style={{float:"right",placeContent:"end",width:"100%"}}>
+        <Menu.Item key="1">Blogs</Menu.Item>
+        <Menu.Item key="2"> <a href="https://github.com/pushpendrahpx/conversion-lamp">Github</a></Menu.Item>
+        <Menu.Item key="3">Sponsor</Menu.Item>
+        <Menu.Item key="4"> About </Menu.Item>
       </Menu>
+    </Header>
+    <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
+      
+    </Content>
+  </Layout>
     );
   }
 }
