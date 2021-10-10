@@ -1,0 +1,32 @@
+.image-cover {
+  width: 100vw;
+  height: 40vh;
+  text-align: center;
+  background: #2f54eb;
+}
+
+.image-inner {
+  display: grid;
+  place-content: center;
+  height: 60%;
+}
+
+.lamp-logo {
+  border-radius: 10px;
+  box-shadow: 0 0 5px #dedede;
+  cursor: pointer;
+  width: 128px;
+  height: 128px;
+}
+
+.moto {
+  display: grid;
+  place-content: center;
+  height: 40%;
+  max-width: 646px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  color: white;
+  font-size: 28px;
+}
