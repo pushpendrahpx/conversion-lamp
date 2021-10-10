@@ -1,0 +1,22 @@
+.header-cover {
+  z-index: 1;
+  width: 100%;
+  display: inline-flex;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu-cover {
+  float: right;
+  place-content: end;
+  width: 100%;
+}
+.site-layout {
+  padding: 0 50px;
+  margin-top: 64;
+}

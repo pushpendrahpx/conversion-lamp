@@ -1,0 +1,15 @@
+.pd-20 {
+  padding: 20px;
+}
+
+.footer-ul {
+  list-style: none;
+}
+
+.footer-hr {
+  border-top: 1px solid #dedede;
+}
+
+.text-center {
+  text-align: center;
+}
