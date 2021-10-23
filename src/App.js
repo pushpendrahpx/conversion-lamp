@@ -7,6 +7,7 @@ import { Button, Layout, Typography, Alert, notification } from "antd";
 import FileUploadComponent from "./Components/FileUpload/FileUpload";
 import Section1Component from "./Components/LandingComponents/Section1/Section1";
 import { useEffect } from "react";
+import FooterComponent from "./Components/FooterComponent/Footer";
 
 const { Title } = Typography;
 const { Footer } = Layout;
@@ -43,7 +44,10 @@ function App() {
           <div className="pd-20">
             <FileUploadComponent />
           </div>
-          <Footer>
+          <div>
+            <FooterComponent />
+          </div>
+          {/* <Footer>
             <div>
               <ul className="footer-ul">
                 <li>
@@ -70,7 +74,7 @@ function App() {
             <div className="text-center">
               <Title level={5}>Made with ❤️ by Open Source Community</Title>
             </div>
-          </Footer>
+          </Footer> */}
         </div>
       </div>
     </AppContext.Provider>
